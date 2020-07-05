@@ -1,8 +1,13 @@
 {
     "dependencies": {
         "@airtable/blocks": "0.0.52",
-        "react": "^16.13.0",
-        "react-dom": "^16.13.0",
+        "bootstrap": "^4.5.0",
+        "lodash": "^4.17.15",
+        "moment": "^2.27.0",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.1",
+        "react-dates": "^21.8.0",
+        "react-dom": "^16.13.1",
         "react-redux": "^7.2.0",
         "redux": "^4.0.5",
         "redux-logger": "^3.0.6",

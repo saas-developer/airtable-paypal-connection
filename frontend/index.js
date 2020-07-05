@@ -5,7 +5,6 @@ import store from './app/store/configureStore';
 import App from './app/App';
 
 function HelloWorldBlock() {
-    // YOUR CODE GOES HERE
     return (
         <Provider store={store}>
           <div>

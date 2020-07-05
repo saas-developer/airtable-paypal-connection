@@ -1,15 +1,19 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { setBusy } from './actionsApp';
+import { loadCSSFromURLAsync, loadCSSFromString } from '@airtable/blocks/ui';
+loadCSSFromURLAsync('https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+import ApiKeysContainer from './paypal/ApiKeysContainer';
+import PayPalApi from './paypal/PayPalApi';
+import GlobalError from './error/GlobalError';
+import reactDates from '../styles/react-dates';
+loadCSSFromString(reactDates);
 
 export default function App() {
-    const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(setBusy());
-    })
+
     return (
-        <div>
-            This is App.js
+        <div style={{ padding: 20 }}>
+        	<GlobalError />
+        	<ApiKeysContainer />
+            <PayPalApi />
         </div>
     )
 }
